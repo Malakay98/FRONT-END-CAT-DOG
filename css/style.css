@@ -81,6 +81,29 @@ p {
   cursor: pointer;
 }
 
+.nav_links ul li {
+  list-style-type: none;
+  position: relative;
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav_links ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  display: inline;
+  transition: 0.3s ease-in-out;
+}
+
+.nav_links ul li a:hover {
+  color: #3c2313;
+}
+
+.fa-times, .fa-bars {
+  display: none;
+}
+
 main .banner {
   display: flex;
   flex-direction: column;
@@ -401,7 +424,7 @@ footer .subscribe .subscribe_2 {
 }
 
 /* DISPOSITVOS MOVILES "CELULARES"  */
-@media (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 700px) {
   ::-webkit-scrollbar {
     display: none;
   }
@@ -466,7 +489,7 @@ footer .subscribe .subscribe_2 {
     list-style-type: none;
   }
 
-  .nav_links ul li a{
+  .nav_links ul li a {
     text-decoration: none;
     color: #ffffff;
   }
@@ -474,8 +497,6 @@ footer .subscribe .subscribe_2 {
   .nav_links ul li a:hover {
     color: #3c2313;
   }
-
-
 
   main .banner {
     display: flex;
@@ -560,6 +581,517 @@ footer .subscribe .subscribe_2 {
 
   .final_footer {
     height: 2vh;
+    background-color: #060606;
+  }
+}
+
+/* DISPOSITVOS MOVILES "CELULARES"  (LANDSCAPE)*/
+@media (min-width: 440px) and (max-width: 690px) and (orientation: landscape) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .first_nav {
+    display: none;
+  }
+
+  .second_nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+  }
+
+  .second_nav .nav_logo {
+    margin: 0px;
+  }
+
+  .nav_links ul li {
+    display: block;
+  }
+
+  .nav_links {
+    position: absolute;
+    background: #f0a83e;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: center;
+    z-index: 2;
+    transition: 0.7s;
+  }
+
+  nav .fa {
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  nav .fa:hover {
+    color: #3c2313;
+    transition: 0.2s ease-in-out;
+  }
+
+  .nav_links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .nav_links ul li {
+    margin-top: 30px;
+    list-style-type: none;
+  }
+
+  .nav_links ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .nav_links ul li a:hover {
+    color: #3c2313;
+  }
+
+  main .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    width: 100%;
+    background-image: url("../img/fondo-verde-grande.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
+  }
+
+  .content_banner {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+  }
+
+  .content_banner h2 {
+    font-size: 25px;
+  }
+
+  .content_banner p {
+    margin: 10px auto;
+    text-align: center;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .main h1 {
+    text-align: center;
+  }
+
+  .main .catalog {
+    flex-direction: column;
+  }
+
+  .main .catalog .element_catalog {
+    width: 300px;
+  }
+
+  .form form input {
+    width: 300px;
+  }
+
+  .form .btn input {
+    width: 200px;
+    height: 50px;
+  }
+
+  footer .subscribe {
+    height: 120px;
+    flex-direction: column;
+  }
+
+  footer .subscribe .subscribe_1 {
+    margin-left: 0px;
+  }
+
+  footer .subscribe .subscribe_2 {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+
+  footer .subscribe .input_footer {
+    border-radius: 18px;
+    width: 250px;
+    height: 20px;
+  }
+
+  footer .subscribe .btn3 {
+    border-radius: 18px;
+    width: 100px;
+    height: 40px;
+  }
+
+  .main_footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main_footer .logo_footer img {
+    margin-top: 10px;
+    width: 180px;
+    height: auto;
+  }
+
+  .final_footer {
+    height: 5vh;
+    background-color: #060606;
+  }
+}
+
+
+/* DISPOSITVOS MOVILES "TABLETS"  (LANDSCAPE)*/
+@media (min-width: 700px) and (max-width: 1200px) and (orientation: landscape) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+    min-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .first_nav {
+    display: none;
+  }
+
+  .second_nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+  }
+
+  .second_nav .nav_logo {
+    margin: 0px;
+  }
+
+  .nav_links ul li {
+    display: block;
+  }
+
+  .nav_links {
+    position: absolute;
+    background: #f0a83e;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -220px;
+    text-align: center;
+    z-index: 2;
+    transition: 0.7s;
+  }
+
+  nav .fa {
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  nav .fa:hover {
+    color: #3c2313;
+    transition: 0.2s ease-in-out;
+  }
+
+  .nav_links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .nav_links ul li {
+    margin-top: 100px;
+    list-style-type: none;
+  }
+
+  .nav_links ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .nav_links ul li a:hover {
+    color: #3c2313;
+  }
+
+  main .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    width: 100%;
+    background-image: url("../img/fondo-verde-grande.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
+  }
+
+  .content_banner {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+  }
+
+  .content_banner h2 {
+    font-size: 30px;
+  }
+
+  .content_banner p {
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .main h1 {
+    text-align: center;
+  }
+
+  .main .catalog {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .main .catalog .element_catalog {
+    margin: 10px;
+    width: 300px;
+  }
+
+  .form form input {
+    width: 300px;
+  }
+
+  .form .btn input {
+    width: 200px;
+    height: 50px;
+  }
+
+  footer .subscribe {
+    height: 120px;
+    flex-direction: column;
+  }
+
+  footer .subscribe .subscribe_1 {
+    margin-left: 0px;
+  }
+
+  footer .subscribe .subscribe_2 {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+
+  footer .subscribe .input_footer {
+    border-radius: 18px;
+    width: 250px;
+    height: 20px;
+  }
+
+  footer .subscribe .btn3 {
+    border-radius: 18px;
+    width: 100px;
+    height: 40px;
+  }
+
+  .main_footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main_footer .logo_footer img {
+    margin-top: 10px;
+    width: 180px;
+    height: auto;
+  }
+
+  .final_footer {
+    height: 4vh;
+    background-color: #060606;
+  }
+}
+
+
+/* DISPOSITVOS MOVILES "TABLETS"*/
+@media (min-width: 700px) and (max-width: 1200px) {
+  body {
+    min-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .first_nav {
+    display: none;
+  }
+
+  .second_nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+  }
+
+  .second_nav .nav_logo {
+    margin: 0px;
+  }
+
+  .nav_links ul li {
+    display: block;
+  }
+
+  .nav_links {
+    position: absolute;
+    background: #f0a83e;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -220px;
+    text-align: center;
+    z-index: 2;
+    transition: 0.7s;
+  }
+
+  nav .fa {
+    display: block;
+    color: #ffffff;
+    font-size: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  nav .fa:hover {
+    color: #3c2313;
+    transition: 0.2s ease-in-out;
+  }
+
+  .nav_links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .nav_links ul li {
+    margin-top: 100px;
+    list-style-type: none;
+  }
+
+  .nav_links ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+  }
+
+  .nav_links ul li a:hover {
+    color: #3c2313;
+  }
+
+  main .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    width: 100%;
+    background-image: url("../img/fondo-verde-grande.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
+  }
+
+  .content_banner {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  .content_banner h2 {
+    font-size: 45px;
+  }
+
+  .content_banner p {
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .main h1 {
+    text-align: center;
+  }
+
+  .main .catalog {
+    flex-direction: column;
+  }
+
+  .main .catalog .element_catalog {
+    margin: 10px;
+    width: 500px;
+  }
+
+  .form form input {
+    width: 300px;
+  }
+
+  .form .btn input {
+    width: 200px;
+    height: 50px;
+  }
+
+  footer .subscribe {
+    height: 120px;
+    flex-direction: column;
+  }
+
+  footer .subscribe .subscribe_1 {
+    margin-left: 0px;
+  }
+
+  footer .subscribe .subscribe_2 {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+
+  footer .subscribe .input_footer {
+    border-radius: 18px;
+    width: 250px;
+    height: 20px;
+  }
+
+  footer .subscribe .btn3 {
+    border-radius: 18px;
+    width: 100px;
+    height: 40px;
+  }
+
+  .main_footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main_footer .logo_footer img {
+    margin-top: 10px;
+    width: 180px;
+    height: auto;
+  }
+
+  .final_footer {
+    height: 4vh;
     background-color: #060606;
   }
 }
